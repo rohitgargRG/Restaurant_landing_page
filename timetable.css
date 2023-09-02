@@ -1,0 +1,39 @@
+.container{
+    display:grid;
+    grid-template: repeat(7,1fr)/repeat(8,1fr);
+}
+.item{
+    border: 1px dashed black;
+    height: 3rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+.biolab{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.chemPhyLabletGame{
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+.time{
+    background-color: rgb(225, 117, 135);
+}
+.day{
+    background-color: #5d15e2;
+}
+.solo{
+    background-color: #0db3e5;
+}
+.lunch{
+    background-color: #eaee1c;
+}
+.break{
+    border: 1px dashed #eaee1c ;
+}
+.duo{
+    background-color: #c3c3c3;
+}
+.green{
+    background-color: #00820d;
+}

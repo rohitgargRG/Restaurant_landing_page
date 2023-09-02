@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@1,100&family=Open+Sans&family=Oswald&family=Playfair:ital,wght@1,300&family=Raleway:wght@600&family=Roboto:wght@300&family=Source+Code+Pro:wght@500&display=swap');
+
+.container{
+    display: grid;
+    grid-template:repeat(2,1fr)/repeat(5,1fr);
+    border: 1px solid black;
+    width: 100vw;
+    grid-template-areas: 
+        "navbar navbar navbar navbar navbar"
+        "text text item2 item3 item3"
+    ;
+ 
+}
+.navbar{
+    width: 100vw;
+    height: 10%;
+    padding: 20px;
+    grid-area: navbar;
+    
+}
+.navbar > img{
+    width: 10px;
+}
+.navbar p{
+
+}
+.item{
+    height: 90vh;
+    grid-area: item;
+}
+.item1{
+    background-color: #f8f5f5;
+    grid-area: item1;
+}
+.item2>img{
+    width: 100%;
+    height: 90vh;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    background-color: #ebf211;
+    float: right;
+    grid-area: item3;
+}

@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    grid-template: repeat(2,40vh)/repeat(4,1fr);
+    grid-gap: 2.5rem;
+    width: 95vw;
+    height: 90vh;
+    padding: 2em;
+    background-color: #323131;
+}
+.item{
+    border-radius: 20px 20px;
+    border: 2px solid black;
+    width: 20vw;
+    height: 40vh;
+}
+.item1{
+    background-color: #8D3DAF;
+}
+.item2{
+    background-color: #E07C24;
+}
+.item3{
+    background-color: #758283;
+}
+.item4{
+    background-color: #E03B8B;
+}
+.item5{
+    background-color: #FF6666;
+}
+.item6{
+    background-color: #03C6C7;
+}
+.item7{
+    background-color: #CAD5E2;
+}
+.item8{
+    background-color: #35BDD0;
+}
+p{
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: monospace;
+    margin-left: 40%;
+    margin-top: 50%;
+}

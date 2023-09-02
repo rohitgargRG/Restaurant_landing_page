@@ -1,0 +1,115 @@
+two imp prop in grid-(focus on layouting and spacing)
+
+1.grid container
+2.grid items
+
+grid container:
+
+make a div with class container and
+make multiple divs inside that
+
+1.grid-template-columns:defines no of columns in a grid
+along with its width
+
+2.grid-template-rows:specifies the number and size of rows in the grid.
+use pixels,percentage,or fractions to define the row heights.
+
+3.grid-template-areas:defines named grid areas within the grid container.
+each area can be assigned a name and then referenced in the css rules for the grid items.
+
+make diff-diff divs with diff class names inside the container div
+
+grid-template-areas:
+                "header header header"    - means first row contains header(1st column - header,2nd column - header,3rd column-header)
+                "sidebar main main"       -means 2nd row contains sidebar and main(1st column - sidebar,2nd column - main,3rd column-main)
+                "footer footer footer"    - means 3rd row contains footer(1st column - footer,2nd column - footer,3rd column-footer)
+            ;
+
+4.grid-template:combines grid - template -rows and grid-template-columns into a single property.
+it allows you to specify both the rows and columns of the grid in a single line.
+
+grid-template:
+repeat(2,1fr) / repeat(3,1fr);
+
+
+
+
+"for managing spacing between columns and rows use these properties: "
+
+5.grid-column-gap:
+defines the space between the columns of a grid
+
+grid-column-gap - 20px;
+or
+column-gap:20px;
+
+5.grid-row-gap:
+defines the space between the row of a grid
+
+grid-row-gap - 20px;
+or
+row-gap:20px;
+
+6.grid-gap - sets the size of the gap between grid items.both horizontally and vertically.
+
+grid-gap:20px;(both)
+grid-gap:20px,10px; (row,column)
+
+
+"for managing alignments of items use this"
+
+7.justify-content:use to horizontally align grid items within a grid container.
+
+justify-content : start;
+justify-content : end;
+justify-content : sapce-between;
+justify-content : sapce-around;
+justify-content : sapce-evenly;
+
+8.align-content:use to vertically align grid items within a grid container.
+
+9.justify-item:aligns grid items horizontally within grid cell.the values are start,end,center and stretch.
+
+10.align-item:aligns grid items vertically within grid cell.the values are start,end,center and stretch.
+
+11.grid-auto-rows:(backfilling)
+
+specifies the height of rows that are automatically created when there is
+no explicit row definition.
+
+11.grid-auto-columns:
+
+12.grid-auto-flow:
+controls the placement of grid items when they do not fit into the explicit grid.
+
+grid-auto-flow:column;  --> jo filling hogi wo column wise hogi.
+
+grid-auto-flow:row; --> jo filling hogi wo row wise hogi.
+
+
+                                 "GRID ITEMS"
+            (apply these propertis on items only,not at ontainer level)
+
+1.grid-column-start  and  grid-column-end:
+defines the starting and ending positions of a grid item along the horizontal axis of the grid.
+
+2.grid-column: 
+grid-column-start / grid-column-end;
+
+3.grid-row-start and grid-row-end:
+defines the starting and ending positions of a grid item
+along the vertical axis of the grid.
+
+4.grid-rows:
+grid-rows-start / grid-rows-end;
+
+5.order:
+defines the order in which a grid item is displayed within its grid container.
+the value can be a numeric value or the keyword auto.
+
+jiska order kam wo pehle aayega,jiska order zyada wo utna piche aayega.
+
+6.justify-self and align-self:
+control the alignment of a grid item within its grid cell along the horizontal
+and vertical axes,respectively.
+

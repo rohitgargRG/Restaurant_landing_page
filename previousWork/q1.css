@@ -1,0 +1,21 @@
+.container{
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    border: 1px solid black;
+    width: 100vw;
+    
+}
+.item{
+    height: 100vh;
+}
+.item1{
+    background-color: #f8f5f5;
+}
+.item2>img{
+    width: 100%;
+    height: 100vh;
+}
+.item3{
+    background-color: #ebf211;
+    float: right;
+}
